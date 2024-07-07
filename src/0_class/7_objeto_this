@@ -1,0 +1,22 @@
+//global.nombre = 'Primo'
+/*Aqui tenemos una funcion donde lo unico que hace es 
+devolver un nombre es y hacemos el uso de this
+para que saque el valor de nombre del dueño de quien la
+esta ejecutando
+*/
+/*En resumen this toma el valor o variable del dueño de la ejecucion*/
+
+/*Las arroy funcions no pueden ser dueños*/
+
+function getName() {
+  console.log(`Mi nombre es ${this.nombre}`)
+}
+global.nombre = 'milton'
+
+let ob = {
+  nombre: 'Mike',
+  getName: getName,
+}
+
+getName()
+ob.getName()

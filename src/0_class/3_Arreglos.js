@@ -40,22 +40,6 @@ const OrderList = list3.sort((a,b)=>{
 console.log(OrderList);
 //Arreglos antigüito
 //Funciones especiales map,filter, find, join
-const list = [];
-const list2 = [1, 23, 4, 3, 3, 2, 3];
-const list3= ["Toyota", "Nissan","foo"];
-const list4= [1, "cadenas",{name:"soy un obj"}]
-//console.log(list);
-//console.log(list2);
-//console.log(list3);
-//console.log(list4);
-//Push Para agragar un valor a la pila y pop para eliminar o sacar
-// list.push("otro valor");
-// list.push("otro valor 1");
-// list.push("otro valor 2");
-// list.push("otro valor 3");
-// list.pop();
-// list.pop();
-// console.log(list);
 //Desestructuracion de los arreglos
 //Es una sintaxis de javascrip que permite desempaquetar propiedades de objetos de arreglos
 // let [,item2]=list3;
@@ -65,29 +49,42 @@ const list4= [1, "cadenas",{name:"soy un obj"}]
 // let anotherlist= [...list3, "Suzuki"];
 // console.log(anotherlist);
 //map lambda =>
-// const unafuncion = () => {};
-// const newlist = list2.map((item)=>{
-//     return item*item;
-// });
-// console.log(newlist);
 
-// const newfilter = list2.filter((item) =>{
-//     if(item % 2 == 0){
-//         return true;
-//     }
-//     return false;
-// });
-// console.log(newfilter);
+//ultimo
+//const list = []
+const list2 = [6, 1, 2, 4, 4, 6, 6]
+const list3 = ['uno', 'dos', 'tres']
+/*list3.push('cuatro')
+list2.pop()
+console.log(list3)
+console.log(list2)*/
 
-// const orderlist = list2.sort((a, b) => {
-//     return b - a;
-// });
-// console.log(orderlist);
+const [, valor] = list3
+const list4 = [...list3, 'cuatro', 'cinco']
+//console.log(valor)
+//console.log(list4)
 
-const orderlistcad = list3.sort((a,b) =>{
-if(a<b){
-    return 1;
-}
-return -1;
-});
-console.log(orderlistcad);
+const newlist = list2.map((item) => {
+  return item * item
+})
+//console.log(newlist)
+
+const orderList = list2.sort((a, b) => {
+  return a - b
+})
+
+const orderList4 = list3.sort((a, b) => {
+  if (a < b) {
+    return 1
+  }
+  return -1
+})
+//console.log(orderList4)
+
+const filterList2 = list2.filter((num) => {
+  if (num % 2 == 0) {
+    return true
+  }
+  return false
+})
+console.log(filterList2)

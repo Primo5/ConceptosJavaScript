@@ -1,22 +1,22 @@
-let person = {
-    name: "Goku",
-    level: 8000,
-    tipo: "Sayayin",
-    enemys: ["Freezer", "Cell", "Majimbo"],
-    rival: {
-        name: "Vegeta",
-        level: 12000,
-        enemys: ["Freezer", "Cell", "Majimbo"],
-        events: {
-            name1: ()=>{
-                console.log("Primera funcion 1");
-            },
-            name2: ()=>{
-                console.log("Primera funcion 2");
-            },
-        },
-    },
-};
+// let person = {
+//     name: "Goku",
+//     level: 8000,
+//     tipo: "Sayayin",
+//     enemys: ["Freezer", "Cell", "Majimbo"],
+//     rival: {
+//         name: "Vegeta",
+//         level: 12000,
+//         enemys: ["Freezer", "Cell", "Majimbo"],
+//         events: {
+//             name1: ()=>{
+//                 console.log("Primera funcion 1");
+//             },
+//             name2: ()=>{
+//                 console.log("Primera funcion 2");
+//             },
+//         },
+//     },
+// };
 
 // const {tipo}= person;
 // console.log(tipo);
@@ -28,12 +28,12 @@ let person = {
 // } = person;
 // console.log(enemy);
 
-const {
-    rival:{
-        events : {name1},
-    },
-}=person;
-console.log(name1());
+// const {
+//     rival:{
+//         events : {name1},
+//     },
+// }=person;
+// console.log(name1());
 /***Para cadenas***/
 // const mifuncion = (params)=>`Hoooola ${params}`;
 // let result = mifuncion("Jaeger");
@@ -58,24 +58,24 @@ console.log(name1());
         enemys :["Freezer", "Cell", "Majimbo"],
     }
 };*/
-let person = {
-    name :"Goku",
-    level : 8000,
-    tipo : "Sayayin",
-    enemys :["Freezer", "Cell", "Majimbo"],
-    events:{
-        name1 : () => {
-            console.log("La primera funcion")
-        },
-        name2 : () => {
-            console.log("Segunda funcion")
-        }
-    }
-};
+// let person = {
+//     name :"Goku",
+//     level : 8000,
+//     tipo : "Sayayin",
+//     enemys :["Freezer", "Cell", "Majimbo"],
+//     events:{
+//         name1 : () => {
+//             console.log("La primera funcion")
+//         },
+//         name2 : () => {
+//             console.log("Segunda funcion")
+//         }
+//     }
+// };
 
-const {events:{name1,name2}
-} = person;
-console.log(name1, name2);
+// const {events:{name1,name2}
+// } = person1;
+// console.log(name1, name2);
 
 // const {name:newname,level, tipo}=person;
 // console.log(newname,level,tipo);
@@ -89,16 +89,6 @@ console.log(name1, name2);
         }
 }=person;
 console.log(newname,levelgoku,level,name,enemy2);*/
-
-
-
-
-
-
-
-
-
-
 
 /**********************Antes *****************/
 // let mifuncion = (params) =>{
@@ -115,3 +105,4 @@ console.log(newname,levelgoku,level,name,enemy2);*/
 // const mifuncion2 = (name) => ({nombre: name});
 //  let result = mifuncion2("Pepe");
 //  console.log(result);
+ 
